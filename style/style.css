@@ -10,16 +10,21 @@
   clear: both;
 }
 
+body
+{
+  background-color: rgb(172, 238, 186);
+}
+
 #container > p
 {
   float: left;
 }
  footer
  {
-    font-size: 5px;
+    font-size: 15px;
     color: #300808;
     text-align: center;
-    position: relative;
+    position: fixed;
     clear: both;
     bottom: 0;
     width: 100%;
@@ -32,7 +37,7 @@
    clear: both;
  }
 
- ul {
+ .sideNav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,11 +47,11 @@
     background-color: #f3f3f3;
   }
   
-  li {
+  .sideNav li {
     float: left;
   }
   
-  li a {
+  .sideNav li a {
     display: block;
     color: #666;
     text-align: center;
@@ -65,12 +70,12 @@
     clear: both;
   }
   
-  li a:hover:not(.active) {
+  .sideNav li a:hover:not(.active) {
     background-color: #555;
     color: #e7e7e7;
   }
   
-  li a.active {
+  .sideNav li a.active {
     color: white;
     background-color: rgb(8, 61, 9);
   }
@@ -78,7 +83,7 @@
 
   @media (max-width:400px)
   {
-     ul {
+    .sideNav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -87,31 +92,31 @@
     border: 1px solid #555;
   }
   
-  li a {
+  .sideNav li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
   }
   
-  li {
+  .sideNav li {
     text-align: center;
     width: 100%;
     border-bottom: 1px solid #555;
   }
   
     
-  li a.active {
+  .sideNav li a.active {
     background-color: rgb(8, 61, 9);
     color: white;
   }
   
-  li a:hover:not(.active) {
+  .sideNav li a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
 
-  li:last-child
+  .sideNav li:last-child
   {
       border-bottom: none;
   }
